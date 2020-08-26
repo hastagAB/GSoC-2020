@@ -9,8 +9,6 @@
 
 ![Logo](/Assets/GSoC-FOSSology.png)
 
-<img align="center" alt="GIF" src="https://media.giphy.com/media/836HiJc7pgzy8iNXCn/giphy.gif" />
-
 ## Google Summer of Code 2020 🚩 Report On Project: "Accelerating Atarashi" 👨‍💻
 
 [![HitCount](http://hits.dwyl.com/hastagAB/GSoC-2020.svg)](http://hits.dwyl.com/hastagAB/GSoC-2020)
@@ -18,6 +16,9 @@
 ![Twitter](https://img.shields.io/twitter/follow/HastagAB?style=social)
 ![GitHub Stars](https://img.shields.io/github/stars/hastagAB/GSoC-2020?style=social)
 
+<p align="center">
+  <img src="https://64.media.tumblr.com/2d0af9c90d1b1107313cc20bda01548a/tumblr_outwxnanpp1u79o2lo1_1280.gifv" alt="Coder" width="500"/>
+</p>
 
 
 <h1 align="center">CONTRIBUTIONS  <img src="https://media.giphy.com/media/dxn6fRlTIShoeBr69N/giphy.gif" width="30"></h1>
@@ -140,7 +141,7 @@ To create a dataset we include subsets like [1], [1,2], [1,2,3], [1,2,3,4], [1,2
 
 Using this technique we were able to generate more than 1 million files from 447 SPDX license files.
 
-Now, as all the para are not equally important and most of these will actually create a lot of noise in dataset. To resolve this, we'll be choosing para with high relevance and then will repeat the same process.
+Now, as all the para are not equally important and most of these will create a lot of noise in the dataset. To resolve this, we'll be choosing para with high relevance and then will repeat the same process.
 
 Few Updation that we need to do is:
 
@@ -155,7 +156,7 @@ Few Updation that we need to do is:
 
 <h2>5. Documenting Nirjas & Atarashi <img src="https://www.kalpataru.com/images/default-source/knowledgehub/documentation/2.gif?Status=Temp&sfvrsn=6245648c_2" width="50"></h2>
 
-During the GSoC period I got the time to create and organize documention for both Atarashi and Nirjas. The documentation contains all the user and developer information of the project and is organized in a way to be easily accisible by all.
+During the GSoC period, I got the time to create and organize documentation for both Atarashi and Nirjas. The documentation contains all the user and developer information of the project and is organized in a way to be easily accessible by all.
 
 The Documentation can be found at:
 
@@ -163,22 +164,22 @@ The Documentation can be found at:
 - Nirjas - [Nirjas GitHub Wiki](https://github.com/fossology/nirjas/wiki)
 
 
-<h1>👨🏻‍🏫 DELIVERABLES <img src="https://api.ezeelo.com/Scripts/QRCode/Done.gif" width="40"></h1>
+<h1 align="center">👨🏻‍🏫 DELIVERABLES <img src="https://api.ezeelo.com/Scripts/QRCode/Done.gif" width="40"></h1>
 
 | Tasks   | Planned | Completed     | Remarks    |
 | :---:       |    :----:   |    :---:      |    :---:      |
 | Creating Nirjas     | Yes       | :heavy_check_mark: | Beta version is live & the project will be developed & maintained continuously |
 | Publish to PyPI   | Yes        | :heavy_check_mark:  | Nirjas is live and can be installed and used in projects |
-| Integrate Nirjas with Atarashi| Yes | :heavy_check_mark: | We are able to select specific license comment part from all comments |
+| Integrate Nirjas with Atarashi| Yes | :heavy_check_mark: | We can select specific license comment part from all comments |
 | Implementing Inverted Index with TF-IDF | Yes | :heavy_check_mark: | Desired accuracy can not be achieved with this algorithm |
-| Creating SPDX OSS Dataset | No | :heavy_check_mark: | dataset can be improved futher and the development is continuously going on |
+| Creating SPDX OSS Dataset | No | :heavy_check_mark: | dataset can be improved further and the development is continuously going on |
 | Implementing BERT (OPTIONAL) | Yes but was OPTIONAL | :x: | can only be implemented after the dataset creation |
 
 
-<h1>🚀 FUTURE PLANS <img src="https://cdn-5e74a325f911c80ca0fe3f0d.closte.com/wp-content/uploads/2020/04/digital-marketing-london-4-1.gif" width="50"></h1>
+<h1 align="center">🚀 FUTURE PLANS <img src="https://cdn-5e74a325f911c80ca0fe3f0d.closte.com/wp-content/uploads/2020/04/digital-marketing-london-4-1.gif" width="50"></h1>
 
 
-1. Implement complete regex in Nirjas covering most of the boundry cases.
+1. Implement complete regex in Nirjas covering most of the boundary cases.
 2. Improving the created SPDX OSS Dataset 
 3. Continue developing Nirjas and Atarashi
 4. Maintaining Nirjas and Atarashi
@@ -186,13 +187,13 @@ The Documentation can be found at:
 
 
 # 
-<h1>📚 Things I learned from Google Summer of Code <img src="https://media1.tenor.com/images/1702679abb72b8bc113028f96c5d20d3/tenor.gif?itemid=10085626" width="60"></h1>
+<h1 align="center">📚 Things I learned from Google Summer of Code <img src="https://media1.tenor.com/images/1702679abb72b8bc113028f96c5d20d3/tenor.gif?itemid=10085626" width="60"></h1>
 
 
 * Learned about various NLP techniques by studying, testing and implementing them
-* various Open-Source licenses and their Importance in codes, projects and softwares.
-* Learned to develop a complete library from scracth
-* Pacakaging of Python Projects and how it is maintained
+* various Open-Source licenses and their Importance in codes, projects and software.
+* Learned to develop a complete library from scratch
+* Packaging of Python Projects and how it is maintained
 * Sharpened my skill of GIT
 * Various Information retrieval algorithms & traditional searching techniques
 * Learned to create a better and cleaner dataset.
@@ -200,3 +201,16 @@ The Documentation can be found at:
 * Learned the importance of time management as well as perfect deliverables.
 * Improved my documentation skill
 * Improved my communication & presentation skill
+
+
+<img align="right" alt="GIF" src="https://static.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif" width="400" />
+
+
+# Want to connect with me?
+- [Connect with me on LinkedIn](https://www.linkedin.com/in/hastagab/)
+- [Give a follow on GitHub](https://github.com/hastagAB)
+- [Follow me at Twitter](https://twitter.com/HastagAB)
+- [Facebook](https://www.facebook.com/SirHastagAB) 
+- [Email](classicayush@gmail.com)
+
+[![](https://img.shields.io/badge/Made%20With%20❤️%20By-HastagAB-red)](https://github.com/hastagAB)
