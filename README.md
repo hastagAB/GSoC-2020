@@ -4,7 +4,7 @@
 <p align="center"><i>Project: "Accelerating Atarashi" </i>  👨‍💻</p>
 
 <p align="center">
-        ✨ 🍰 ✨&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://64.media.tumblr.com/c93f16953341ab06acd12b493659bdee/tumblr_mr68hhmVE11r5ikx8o1_400.gif" width="100">
 </p>
 
 ![Logo](/Assets/GSoC-FOSSology.png)
@@ -74,7 +74,7 @@ A small change was done in the Evaluator where the testing files were zipped and
 
 The main idea was to create an inverted index for all the license texts and then use TF-IDF score to detect the licenses. This was supposed the decrease the detection time drastically and make agents faster. 
 
-
+<img align="center" alt="Flowchart" src="https://i.ibb.co/yd5dTcK/Inv.jpg" width="500" />
 
 The inverted index created is in the form:
 
@@ -129,7 +129,6 @@ According to me the two main factors that affect the performance of the algorith
 
 - GitHub Repo: [TFIDF-Invterted-Index](https://github.com/hastagAB/TFIDF-Invterted-Index)
 
-
 <h2>4. Creation of SPDX OSS license dataset <img src="https://2.bp.blogspot.com/-D2LNU-Zsfbc/WHZIdsOhXuI/AAAAAAAAIbc/eTt3Gohpelo14Niqx9nQ8mu35gUGbeW0wCLcB/s1600/online_student_learning_4545.gif" width="50"></h2>
 
 To implement any Machine learning/Deep learning algorithm we need a better and bigger dataset of SPDX Licences.
@@ -140,3 +139,64 @@ Suppose a license text has 5 paragraphs [1,2,3,4,5] in order.
 To create a dataset we include subsets like [1], [1,2], [1,2,3], [1,2,3,4], [1,2,3,4,5] for all combinations starting from 1,2,3,4 and 5. each one with the same label.
 
 Using this technique we were able to generate more than 1 million files from 447 SPDX license files.
+
+Now, as all the para are not equally important and most of these will actually create a lot of noise in dataset. To resolve this, we'll be choosing para with high relevance and then will repeat the same process.
+
+Few Updation that we need to do is:
+
+1. Shifting from txt files to SPDX JSON endpoint
+2. Differentiating License Header from Full Text
+3. Adding FOSSology Nomos agent STRINGS.in regex in dataset creation
+
+
+### Codebase
+
+- GitHub Repo: [SPDX OSS Dataset](https://github.com/hastagAB/SPDX-OSS-Dataset)
+
+<h2>5. Documenting Nirjas & Atarashi <img src="https://www.kalpataru.com/images/default-source/knowledgehub/documentation/2.gif?Status=Temp&sfvrsn=6245648c_2" width="50"></h2>
+
+During the GSoC period I got the time to create and organize documention for both Atarashi and Nirjas. The documentation contains all the user and developer information of the project and is organized in a way to be easily accisible by all.
+
+The Documentation can be found at:
+
+- Atarashi - [Atarashi GitHub Wiki](https://github.com/fossology/atarashi/wiki)
+- Nirjas - [Nirjas GitHub Wiki](https://github.com/fossology/nirjas/wiki)
+
+
+<h1>👨🏻‍🏫 DELIVERABLES <img src="https://api.ezeelo.com/Scripts/QRCode/Done.gif" width="40"></h1>
+
+| Tasks   | Planned | Completed     | Remarks    |
+| :---:       |    :----:   |    :---:      |    :---:      |
+| Creating Nirjas     | Yes       | :heavy_check_mark: | Beta version is live & the project will be developed & maintained continuously |
+| Publish to PyPI   | Yes        | :heavy_check_mark:  | Nirjas is live and can be installed and used in projects |
+| Integrate Nirjas with Atarashi| Yes | :heavy_check_mark: | We are able to select specific license comment part from all comments |
+| Implementing Inverted Index with TF-IDF | Yes | :heavy_check_mark: | Desired accuracy can not be achieved with this algorithm |
+| Creating SPDX OSS Dataset | No | :heavy_check_mark: | dataset can be improved futher and the development is continuously going on |
+| Implementing BERT (OPTIONAL) | Yes but was OPTIONAL | :x: | can only be implemented after the dataset creation |
+
+
+<h1>🚀 FUTURE PLANS <img src="https://cdn-5e74a325f911c80ca0fe3f0d.closte.com/wp-content/uploads/2020/04/digital-marketing-london-4-1.gif" width="50"></h1>
+
+
+1. Implement complete regex in Nirjas covering most of the boundry cases.
+2. Improving the created SPDX OSS Dataset 
+3. Continue developing Nirjas and Atarashi
+4. Maintaining Nirjas and Atarashi
+5. Searching for other methods to be implemented for license scanning
+
+
+# 
+<h1>📚 Things I learned from Google Summer of Code <img src="https://media1.tenor.com/images/1702679abb72b8bc113028f96c5d20d3/tenor.gif?itemid=10085626" width="60"></h1>
+
+
+* Learned about various NLP techniques by studying, testing and implementing them
+* various Open-Source licenses and their Importance in codes, projects and softwares.
+* Learned to develop a complete library from scracth
+* Pacakaging of Python Projects and how it is maintained
+* Sharpened my skill of GIT
+* Various Information retrieval algorithms & traditional searching techniques
+* Learned to create a better and cleaner dataset.
+* Improved my knowledge of Data Science
+* Learned the importance of time management as well as perfect deliverables.
+* Improved my documentation skill
+* Improved my communication & presentation skill
