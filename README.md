@@ -11,7 +11,7 @@
 
 ## Google Summer of Code 2020 🚩 Report: "Accelerating Atarashi" 👨‍💻
 
-[![HitCount](http://hits.dwyl.com/hastagAB/GSoC-2020.svg)](http://hits.dwyl.com/hastagAB/GSoC-2020)
+![ViewCount](https://views.whatilearened.today/views/github/hastagAB/GSoC-2020.svg)
 ![GitHub](https://img.shields.io/github/followers/hastagAB?style=social)
 ![Twitter](https://img.shields.io/twitter/follow/HastagAB?style=social)
 ![GitHub Stars](https://img.shields.io/github/stars/hastagAB/GSoC-2020?style=social)
