@@ -31,9 +31,9 @@
 
 To scan for various open-source licenses inside of the file, one of the crucial parts is to extract the comments out of the code so that the base algorithm(agents) can detect the license. The license texts are in the comment section which makes it separate from the original codebase. 
 
-I and Kaushlendra worked on developing a fully dedicated Python library from scratch for these tasks and managed to publish the initial version at PyPI before the first evaluation.
+I and [Kaushlendra](https://github.com/Kaushl2208) worked on developing a fully dedicated Python library from scratch for these tasks and managed to publish the initial version at PyPI before the first evaluation.
 
-Nirjas is live at PyPI and can be installed using `pip install nirjas`.
+Nirjas is live at [PyPI](https://pypi.org/project/Nirjas/) and can be installed using `pip install nirjas`.
 
 The major task was to classify different types of comments and to write separate logic for each one of them. The types are:
 
@@ -42,7 +42,7 @@ The major task was to classify different types of comments and to write separate
 3. Continuous single lines (continuous lines commented out using single-line syntax at each line)
 4. Inline comments (the comments that are written after the code on the same line)
 
-The library can extract comments as well as code out of files from more than 20 popular programming languages. Along with that the library also serves you with all the required metadata about your Code, Comments and File(s). The library is available for public use and can be used in projects ranging from various domains.
+The library can extract comments as well as code out of files from more than [20 popular programming languages](https://github.com/fossology/nirjas#supported-languages). Along with that the library also serves you with all the required metadata about your Code, Comments and File(s). The library is available for public use and can be used in projects ranging from various domains.
 
 <img align="center" src="https://i.ibb.co/84G8PFX/nirjas.gif" alt="nirjas">
 
@@ -57,12 +57,12 @@ The complete list of Open and Closed PRs can be found at [Nirjas/Pull requests](
 
 <h2>2. Integrating Nirjas with Atarashi <img src="https://i.pinimg.com/originals/5a/0d/cd/5a0dcd8f92afeec3b2b27f617bf0a714.gif" width="80"></h2>
 
-The next task was to replace existing code comment extractor with Nirjas in Atarashi.
-At this point, the existing code comment extractor was not working at all and was throwing an error whenever an agent was called. So we took the right decision to create our code comment extractor.
+The next task was to replace existing [code comment extractor](https://github.com/amanjain97/code_comment/) with [Nirjas](https://github.com/fossology/nirjas) in [Atarashi](https://github.com/fossology/atarashi).
+At this point, the existing [code comment extractor](https://github.com/amanjain97/code_comment/) was not working at all and was throwing an error whenever an agent was called. So we took the right decision to create our code comment extractor.
 
-Nirjas supports almost all the major languages currently and will be continuously developed and maintained by FOSSology itself.
+Nirjas supports almost all the [major programming languages](https://github.com/fossology/nirjas#supported-languages) currently and will be continuously developed and maintained by [FOSSology](https://github.com/fossology) itself.
 
-The integration is done in such a way that it will extract and pass only those comments which contain a license statement. The comments classification by Nirjas played a big role here followed by our customized list of tokens which helps us find the actual license comment out of all other comments. Earlier the comment extractor used to pass all the comments which made the input string little bit noisier to detect.
+The integration is done in such a way that it will extract and pass only those comments which contain a license statement. The comments classification by Nirjas played a big role here followed by our [customized list of tokens](https://github.com/fossology/atarashi/blob/master/atarashi/libs/commentPreprocessor.py#L37) which helps us find the actual license comment out of all other comments. Earlier the comment extractor used to pass all the comments which made the input string little bit noisier to detect.
 
 A small change was done in the Evaluator where the testing files were zipped and the existing code was improved.
 
@@ -73,7 +73,7 @@ A small change was done in the Evaluator where the testing files were zipped and
 <h2>3. Implementing Inverted Index with TF-IDF <img src="https://raw.githubusercontent.com/lhl/pusheen-stickers/master/gif/pusheen/144884865685780.gif" width="50"></h2>
 
 
-The main idea was to create an inverted index for all the license texts and then use TF-IDF score to detect the licenses. This was supposed the decrease the detection time drastically and make agents faster. 
+The main idea was to create an [Inverted Index](https://nlp.stanford.edu/IR-book/html/htmledition/a-first-take-at-building-an-inverted-index-1.html) for all the license texts and then use [TF-IDF](http://www.tfidf.com/) score to detect the licenses. This was supposed the decrease the detection time drastically and make agents faster. 
 
 <img align="center" alt="Flowchart" src="https://i.ibb.co/yd5dTcK/Inv.jpg" width="500" />
 
@@ -109,7 +109,7 @@ The inverted index created is in the form:
 }
 ```
 
-Then for every input comment, we are extracting the keywords and comparing their TF-IDF Scores with the posting inside of Inverted Index file. The documents having the closest TF-IDF scores are ranked in order and the top result is returned as our detected license.
+Then for every input comment, we are extracting the keywords and comparing their [TF-IDF](http://www.tfidf.com/) Scores with the posting inside of Inverted Index file. The documents having the closest [TF-IDF](http://www.tfidf.com/) scores are ranked in order and the top result is returned as our detected license.
 
 Although the algorithm succeeded in decreasing the scanning time from around 1200 secs to 260 secs (for 100 files) unfortunately we were not able to increase the accuracy.
 After applying various searching techniques, the maximum accuracy we got was 50% which is less than the original TF-IDF agent (i.e 59%).
@@ -132,7 +132,7 @@ According to me the two main factors that affect the performance of the algorith
 
 <h2>4. Creation of SPDX OSS license dataset <img src="https://2.bp.blogspot.com/-D2LNU-Zsfbc/WHZIdsOhXuI/AAAAAAAAIbc/eTt3Gohpelo14Niqx9nQ8mu35gUGbeW0wCLcB/s1600/online_student_learning_4545.gif" width="50"></h2>
 
-To implement any Machine learning/Deep learning algorithm we need a better and bigger dataset of SPDX Licences.
+To implement any Machine learning/Deep learning algorithm we need a better and bigger dataset of [SPDX Licences](https://spdx.org/licenses/).
 But unfortunately, there exists no such dataset for open source licenses on the web.
 
 To generate the dataset the base approach we used is to n-gram the paragraphs of license texts and to generate different permutations and combinations of them
@@ -147,7 +147,7 @@ Few Updation that we need to do is:
 
 1. Shifting from txt files to SPDX JSON endpoint
 2. Differentiating License Header from Full Text
-3. Adding FOSSology Nomos agent STRINGS.in regex in dataset creation
+3. Adding FOSSology Nomos agent [STRINGS.in](https://github.com/fossology/fossology/blob/master/src/nomos/agent/STRINGS.in) regex in dataset creation
 
 
 ### Codebase
@@ -156,7 +156,7 @@ Few Updation that we need to do is:
 
 <h2>5. Documenting Nirjas & Atarashi <img src="https://www.kalpataru.com/images/default-source/knowledgehub/documentation/2.gif?Status=Temp&sfvrsn=6245648c_2" width="50"></h2>
 
-During the GSoC period, I got the time to create and organize documentation for both Atarashi and Nirjas. The documentation contains all the user and developer information of the project and is organized in a way to be easily accessible by all.
+During the GSoC period, I got the time to create and organize documentation for both [Atarashi](https://github.com/fossology/atarashi) and [Nirjas](https://github.com/fossology/Nirjas). The documentation contains all the user and developer information of the project and is organized in a way to be easily accessible by all.
 
 The Documentation can be found at:
 
