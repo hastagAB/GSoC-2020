@@ -44,7 +44,7 @@ The major task was to classify different types of comments and to write separate
 
 The library can extract comments as well as code out of files from more than [20 popular programming languages](https://github.com/fossology/nirjas#supported-languages). Along with that the library also serves you with all the required metadata about your Code, Comments and File(s). The library is available for public use and can be used in projects ranging from various domains.
 
-<img align="center" src="https://i.ibb.co/84G8PFX/nirjas.gif" alt="nirjas">
+<img align="center" src="Assets/nirjas.gif" alt="nirjas">
 
 ### Major Pull Requests
 
@@ -75,7 +75,7 @@ A small change was done in the Evaluator where the testing files were zipped and
 
 The main idea was to create an [Inverted Index](https://nlp.stanford.edu/IR-book/html/htmledition/a-first-take-at-building-an-inverted-index-1.html) for all the license texts and then use [TF-IDF](http://www.tfidf.com/) score to detect the licenses. This was supposed the decrease the detection time drastically and make agents faster. 
 
-<img align="center" alt="Flowchart" src="https://i.ibb.co/yd5dTcK/Inv.jpg" width="500" />
+<img align="center" alt="Flowchart" src="Assets/Inv.jpg" width="500" />
 
 The inverted index created is in the form:
 
@@ -114,7 +114,7 @@ Then for every input comment, we are extracting the keywords and comparing their
 Although the algorithm succeeded in decreasing the scanning time from around 1200 secs to 260 secs (for 100 files) unfortunately we were not able to increase the accuracy.
 After applying various searching techniques, the maximum accuracy we got was 50% which is less than the original TF-IDF agent (i.e 59%).
 
-![Inverted-Index with TF-IDF](https://i.ibb.co/Y0ss4QX/result.png)
+<img align="center" src="Assets/result.png" alt="result">
 
 According to me the two main factors that affect the performance of the algorithms(in terms of accuracy) are:
 
