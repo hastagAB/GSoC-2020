@@ -9,7 +9,7 @@
 
 ![Logo](/Assets/GSoC-FOSSology.png)
 
-## Google Summer of Code 2020 🚩 Report On Project: "Accelerating Atarashi" 👨‍💻
+## Google Summer of Code 2020 🚩 Report: "Accelerating Atarashi" 👨‍💻
 
 [![HitCount](http://hits.dwyl.com/hastagAB/GSoC-2020.svg)](http://hits.dwyl.com/hastagAB/GSoC-2020)
 ![GitHub](https://img.shields.io/github/followers/hastagAB?style=social)
@@ -44,7 +44,9 @@ The major task was to classify different types of comments and to write separate
 
 The library can extract comments as well as code out of files from more than [20 popular programming languages](https://github.com/fossology/nirjas#supported-languages). Along with that the library also serves you with all the required metadata about your Code, Comments and File(s). The library is available for public use and can be used in projects ranging from various domains.
 
-<img align="center" src="Assets/nirjas.gif" alt="nirjas">
+<p align="center">
+  <img src="Assets/nirjas.gif" alt="Nirjas" width="800"/>
+</p>
 
 ### Major Pull Requests
 
@@ -70,12 +72,14 @@ A small change was done in the Evaluator where the testing files were zipped and
 
 - [feat(Nirjas): Replace code comment extractor with Nirjas #68](https://github.com/fossology/atarashi/pull/68)
 
-<h2>3. Implementing Inverted Index with TF-IDF <img src="https://raw.githubusercontent.com/lhl/pusheen-stickers/master/gif/pusheen/144884865685780.gif" width="50"></h2>
 
+<h2>3. Implementing Inverted Index with TF-IDF <img src="https://raw.githubusercontent.com/lhl/pusheen-stickers/master/gif/pusheen/144884865685780.gif" width="50"></h2>
 
 The main idea was to create an [Inverted Index](https://nlp.stanford.edu/IR-book/html/htmledition/a-first-take-at-building-an-inverted-index-1.html) for all the license texts and then use [TF-IDF](http://www.tfidf.com/) score to detect the licenses. This was supposed the decrease the detection time drastically and make agents faster. 
 
-<img align="center" alt="Flowchart" src="Assets/Inv.jpg" width="500" />
+<p align="center">
+  <img src="Assets/Inv.jpg" alt="Flowchart" width="600"/>
+</p>
 
 The inverted index created is in the form:
 
