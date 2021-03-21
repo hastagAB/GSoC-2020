@@ -206,15 +206,17 @@ The Documentation can be found at:
 * Improved my documentation skill
 * Improved my communication & presentation skill
 
+## Selected Proposal - [Proposal-Atarashi-GSoC2020](https://docs.google.com/document/d/1NjLObIkJOy9rUGEb2uVRsbHBS2ZTUBYN6aRs337btmA/edit?usp=sharing)
+
 
 <img align="right" alt="GIF" src="https://static.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif" width="400" />
 
 
-# Want to connect with me?
+# Let's get connected!
 - [Connect with me on LinkedIn](https://www.linkedin.com/in/hastagab/)
 - [Give a follow on GitHub](https://github.com/hastagAB)
 - [Follow me at Twitter](https://twitter.com/HastagAB)
 - [Facebook](https://www.facebook.com/SirHastagAB) 
-- [Email](classicayush@gmail.com)
+- [Instagram](https://www.instagram.com/sirhastagab/)
 
 [![](https://img.shields.io/badge/Made%20With%20❤️%20By-HastagAB-red)](https://github.com/hastagAB)
